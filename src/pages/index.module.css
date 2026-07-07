@@ -1,0 +1,39 @@
+.heroBanner {
+  padding: 5rem 0 4rem;
+  text-align: center;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(110, 168, 254, 0.18), transparent 55%),
+    linear-gradient(180deg, #0b0d12 0%, #12141c 100%);
+}
+
+[data-theme='light'] .heroBanner {
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(110, 168, 254, 0.12), transparent 55%),
+    linear-gradient(180deg, #f4f6fb 0%, #e8ecf4 100%);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+}
+
+.hero__subtitle {
+  max-width: 42rem;
+  margin-inline: auto;
+}

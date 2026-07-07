@@ -1,0 +1,122 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const org = 'Kosmos-computer';
+const repo = 'docs';
+const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
+
+const config: Config = {
+  title: 'Arco',
+  tagline: 'Generative UI library for Kosmos — tokens, components, blocks, and the AI assembly contract.',
+  favicon: 'img/favicon.ico',
+
+  future: {
+    v4: true,
+  },
+
+  url: 'https://kosmos-docs.vercel.app',
+  baseUrl: '/',
+  organizationName: org,
+  projectName: repo,
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          editUrl,
+        },
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    image: 'img/arco-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Arco',
+      logo: {
+        alt: 'Arco',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'guideSidebar',
+          position: 'left',
+          label: 'Guide',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'referenceSidebar',
+          position: 'left',
+          label: 'Reference',
+        },
+        {
+          href: 'https://kosmos-www.vercel.app',
+          label: 'Kosmos',
+          position: 'right',
+        },
+        {
+          href: `https://github.com/${org}/${repo}`,
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Guide',
+          items: [
+            {label: 'Getting started', to: '/guide/getting-started'},
+            {label: 'Design tokens', to: '/guide/design-tokens'},
+            {label: 'Generative blocks', to: '/guide/generative-blocks'},
+          ],
+        },
+        {
+          title: 'Reference',
+          items: [
+            {label: 'Token catalog', to: '/reference/tokens'},
+            {label: 'Block registry', to: '/reference/block-registry'},
+            {label: 'Standards map', to: '/reference/standards-map'},
+          ],
+        },
+        {
+          title: 'Kosmos',
+          items: [
+            {label: 'Marketing site', href: 'https://kosmos-www.vercel.app'},
+            {label: 'Arco spec', href: 'https://kosmos-www.vercel.app/spec.html'},
+            {label: 'Prototype repo', href: 'https://github.com/Kosmos-computer/Kosmos'},
+          ],
+        },
+      ],
+      copyright: `Arco — generative UI library for Kosmos. © ${new Date().getFullYear()} Kosmos-computer`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;
