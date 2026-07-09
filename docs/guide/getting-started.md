@@ -6,6 +6,12 @@ title: Getting started
 
 This guide covers how to work with Arco inside the [Kosmos prototype](https://github.com/Kosmos-computer/Kosmos) monorepo.
 
+## Get a hosted instance
+
+Sign up at [arco-control-plane.fly.dev](https://arco-control-plane.fly.dev) to provision your own Arco instance at `https://arco-<name>.fly.dev`. After checkout, open your instance URL and create your owner account.
+
+Returning customers can [sign in](https://arco-control-plane.fly.dev/signin) with the email used at checkout or their instance name.
+
 ## Prerequisites
 
 - Node.js 22+

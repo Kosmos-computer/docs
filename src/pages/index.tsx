@@ -19,8 +19,13 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="/guide/getting-started">
-            Get started
+          <Link
+            className="button button--primary button--lg"
+            href="https://arco-control-plane.fly.dev">
+            Get your instance
+          </Link>
+          <Link className="button button--secondary button--lg" to="/guide/getting-started">
+            Read the guide
           </Link>
           <Link
             className="button button--secondary button--lg"

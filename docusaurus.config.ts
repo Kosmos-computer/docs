@@ -6,6 +6,8 @@ const org = 'Kosmos-computer';
 const repo = 'docs';
 const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
+const controlPlaneUrl = 'https://arco-control-plane.fly.dev';
+
 const config: Config = {
   title: 'Arco',
   tagline: 'Generative UI library for Kosmos — tokens, components, blocks, and the AI assembly contract.',
@@ -76,6 +78,16 @@ const config: Config = {
           position: 'right',
         },
         {
+          href: controlPlaneUrl,
+          label: 'Get instance',
+          position: 'right',
+        },
+        {
+          href: `${controlPlaneUrl}/signin`,
+          label: 'Sign in',
+          position: 'right',
+        },
+        {
           href: `https://github.com/${org}/${repo}`,
           label: 'GitHub',
           position: 'right',
@@ -105,6 +117,8 @@ const config: Config = {
           title: 'Kosmos',
           items: [
             {label: 'Marketing site', href: 'https://kosmos-www.vercel.app'},
+            {label: 'Get hosted instance', href: controlPlaneUrl},
+            {label: 'Sign in', href: `${controlPlaneUrl}/signin`},
             {label: 'Arco spec', href: 'https://kosmos-www.vercel.app/spec.html'},
             {label: 'Prototype repo', href: 'https://github.com/Kosmos-computer/Kosmos'},
           ],
