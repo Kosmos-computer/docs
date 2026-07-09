@@ -7,6 +7,8 @@ const repo = 'docs';
 const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
 const controlPlaneUrl = 'https://arco-control-plane.fly.dev';
+const marketingSiteUrl = 'https://kosmos-www.vercel.app';
+const betaModalUrl = `${marketingSiteUrl}/#beta`;
 
 const config: Config = {
   title: 'Arco',
@@ -50,14 +52,17 @@ const config: Config = {
   themeConfig: {
     image: 'img/arco-social-card.jpg',
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Arco',
+      title: 'Kosmos Docs',
       logo: {
         alt: 'Arco',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
+        width: 18,
+        height: 13,
       },
       items: [
         {
@@ -73,29 +78,29 @@ const config: Config = {
           label: 'Reference',
         },
         {
-          href: 'https://kosmos-www.vercel.app',
-          label: 'Kosmos',
+          type: 'html',
           position: 'right',
+          value: '<span class="navbar__item navbar__link navbar__link--inactive">Kosmos</span>',
         },
         {
-          href: controlPlaneUrl,
-          label: 'Get instance',
+          type: 'html',
           position: 'right',
+          value: '<span class="navbar__item navbar__link navbar__link--inactive">Get instance</span>',
         },
         {
-          href: `${controlPlaneUrl}/signin`,
-          label: 'Sign in',
+          type: 'html',
           position: 'right',
+          value: '<span class="navbar__item navbar__link navbar__link--inactive">Sign in</span>',
         },
         {
-          href: `https://github.com/${org}/${repo}`,
-          label: 'GitHub',
+          type: 'html',
           position: 'right',
+          value: '<span class="navbar__item navbar__link navbar__link--inactive">GitHub</span>',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Guide',
@@ -116,10 +121,10 @@ const config: Config = {
         {
           title: 'Kosmos',
           items: [
-            {label: 'Marketing site', href: 'https://kosmos-www.vercel.app'},
-            {label: 'Get hosted instance', href: controlPlaneUrl},
-            {label: 'Sign in', href: `${controlPlaneUrl}/signin`},
-            {label: 'Arco spec', href: 'https://kosmos-www.vercel.app/spec.html'},
+            {label: 'Marketing site', href: betaModalUrl},
+            {label: 'Get hosted instance', href: betaModalUrl},
+            {label: 'Sign in', href: betaModalUrl},
+            {label: 'Arco spec', href: `${marketingSiteUrl}/spec.html`},
             {label: 'Prototype repo', href: 'https://github.com/Kosmos-computer/Kosmos'},
           ],
         },

@@ -1,0 +1,17 @@
+.circle {
+  position: relative;
+  display: inline-block;
+  width: 0.72em;
+  height: 0.72em;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6b46c1, #f06282, #2ec4d8, #f5b942);
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

@@ -1,26 +1,64 @@
 .features {
-  padding: 3rem 0 4rem;
+  padding: 3rem 0 5rem;
+  background: var(--lf-bg);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.sectionEyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--lf-text-muted);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 996px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .featureCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  background: #ffffff;
+  border-radius: var(--lf-radius-lg);
   padding: 1.5rem;
   height: 100%;
+  border: 1px solid var(--lf-border);
+  box-shadow: var(--lf-shadow);
+}
+
+[data-theme='dark'] .featureCard {
+  background: var(--lf-surface);
+  border-color: var(--lf-border);
+  box-shadow: var(--lf-shadow);
 }
 
 .featureCard h3 {
-  font-size: 1.1rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
   margin-bottom: 0.75rem;
 }
 
 .featureCard p {
   margin: 0;
-  color: var(--ifm-color-emphasis-700);
-}
-
-[data-theme='light'] .featureCard {
-  background: rgba(15, 23, 42, 0.03);
-  border-color: rgba(15, 23, 42, 0.08);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--lf-text-secondary);
 }
