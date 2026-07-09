@@ -233,12 +233,14 @@ body {
   --ifm-button-background-color: var(--lf-text);
   --ifm-button-border-color: var(--lf-text);
   --ifm-button-color: var(--lf-on-dark);
+  color: var(--ifm-button-color);
   border-radius: 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .button--primary:hover {
   --ifm-button-background-color: var(--lf-text);
+  color: var(--ifm-button-color);
   opacity: 0.88;
 }
 
@@ -246,23 +248,38 @@ body {
   --ifm-button-background-color: rgba(250, 250, 250, 0.7);
   --ifm-button-border-color: var(--lf-border);
   --ifm-button-color: var(--lf-text);
+  color: var(--ifm-button-color);
   border-radius: 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .button--secondary:hover {
   --ifm-button-background-color: var(--lf-surface);
+  color: var(--ifm-button-color);
 }
 
 [data-theme='dark'] .button--secondary {
   --ifm-button-background-color: var(--clay-base);
-  --ifm-button-border-color: rgba(255, 255, 255, 0.08);
+  --ifm-button-border-color: rgba(255, 255, 255, 0.12);
+  --ifm-button-color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .button--secondary:hover {
+  --ifm-button-background-color: var(--lf-surface-muted);
+  color: #f5f5f5;
 }
 
 [data-theme='dark'] .button--primary {
-  --ifm-button-background-color: var(--lf-on-dark);
-  --ifm-button-border-color: var(--lf-on-dark);
-  --ifm-button-color: var(--lf-text);
+  --ifm-button-background-color: #262626;
+  --ifm-button-border-color: #404040;
+  --ifm-button-color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .button--primary:hover {
+  --ifm-button-background-color: #333333;
+  color: #f5f5f5;
 }
 
 /* ── Hero ── */
