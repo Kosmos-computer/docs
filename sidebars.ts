@@ -34,6 +34,32 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  sdkSidebar: [
+    {
+      type: 'category',
+      label: 'SDK',
+      items: [
+        'sdk/overview',
+        'sdk/getting-started',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Architecture',
+      items: [
+        'sdk/architecture',
+        'sdk/agent-events',
+        'sdk/auth',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'API reference',
+      items: [
+        'sdk/api/client',
+      ],
+    },
+  ],
 };
 
 export default sidebars;

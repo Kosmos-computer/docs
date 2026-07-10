@@ -82,6 +82,12 @@ const config: Config = {
           label: 'Reference',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'sdkSidebar',
+          position: 'left',
+          label: 'SDK',
+        },
+        {
           type: 'html',
           position: 'right',
           value: '<span class="navbar__item navbar__link navbar__link--inactive">Kosmos</span>',
@@ -120,6 +126,15 @@ const config: Config = {
             {label: 'Token catalog', to: '/reference/tokens'},
             {label: 'Block registry', to: '/reference/block-registry'},
             {label: 'Standards map', to: '/reference/standards-map'},
+          ],
+        },
+        {
+          title: 'SDK',
+          items: [
+            {label: 'Overview', to: '/sdk/overview'},
+            {label: 'Getting started', to: '/sdk/getting-started'},
+            {label: 'Agent events', to: '/sdk/agent-events'},
+            {label: 'kosmos-sdk repo', href: 'https://github.com/Kosmos-computer/kosmos-sdk'},
           ],
         },
         {
