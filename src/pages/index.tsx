@@ -25,7 +25,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            href="https://arco-control-plane.fly.dev">
+            href="https://kosmos-control-plane.fly.dev">
             Get your instance
           </Link>
           <Link className="button button--secondary button--lg" to="/guide/getting-started">

@@ -6,7 +6,7 @@ const org = 'Kosmos-computer';
 const repo = 'docs';
 const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
-const controlPlaneUrl = 'https://arco-control-plane.fly.dev';
+const controlPlaneUrl = 'https://kosmos-control-plane.fly.dev';
 const marketingSiteUrl = 'https://kosmos-www.vercel.app';
 const betaModalUrl = `${marketingSiteUrl}/#beta`;
 

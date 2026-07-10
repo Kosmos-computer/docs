@@ -8,9 +8,9 @@ This guide covers how to work with Arco inside the [Kosmos prototype](https://gi
 
 ## Get a hosted instance
 
-Sign up at [arco-control-plane.fly.dev](https://arco-control-plane.fly.dev) to provision your own Arco instance at `https://arco-<name>.fly.dev`. After checkout, open your instance URL and create your owner account.
+Sign up at [kosmos-control-plane.fly.dev](https://kosmos-control-plane.fly.dev) to provision your own Kosmos instance at `https://kosmos-<name>.fly.dev`. After checkout, open your instance URL and create your owner account.
 
-Returning customers can [sign in](https://arco-control-plane.fly.dev/signin) with the email used at checkout or their instance name.
+Returning customers can [sign in](https://kosmos-control-plane.fly.dev/signin) with the email used at checkout or their instance name.
 
 ## Prerequisites
 
