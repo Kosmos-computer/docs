@@ -6,7 +6,7 @@ title: Agent events
 
 Agent turns stream a sequence of typed **`AgentEvent`** objects over Server-Sent Events (SSE). Each line is `data: { ...json... }`.
 
-The `@kosmos/types` package exports the full union. This page documents each variant and typical client handling.
+The `@kosmos-computer/types` package exports the full union. This page documents each variant and typical client handling.
 
 ## Lifecycle
 
@@ -135,5 +135,5 @@ Kosmos defines the `AgentEvent` stream as part of its open agent surface (see [s
 ## Type import
 
 ```typescript
-import type { AgentEvent } from "@kosmos/sdk";
+import type { AgentEvent } from "@kosmos-computer/sdk";
 ```

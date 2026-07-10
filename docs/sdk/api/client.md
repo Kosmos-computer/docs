@@ -4,12 +4,12 @@ slug: /sdk/api/client
 title: KosmosClient
 ---
 
-Reference for `@kosmos/sdk` v0.1.
+Reference for `@kosmos-computer/sdk` v0.1.
 
 ## `KosmosClient`
 
 ```typescript
-import { KosmosClient } from "@kosmos/sdk";
+import { KosmosClient } from "@kosmos-computer/sdk";
 
 const client = new KosmosClient({
   baseUrl: string,
@@ -78,7 +78,7 @@ interface ChatTurnResult {
 ## Errors
 
 ```typescript
-import { KosmosError } from "@kosmos/sdk";
+import { KosmosError } from "@kosmos-computer/sdk";
 
 try {
   await client.ping();
@@ -92,17 +92,17 @@ try {
 ## Low-level utilities
 
 ```typescript
-import { parseSseLines, streamSse } from "@kosmos/sdk";
+import { parseSseLines, streamSse } from "@kosmos-computer/sdk";
 ```
 
 Exported for custom integrations and tests.
 
 ## Types
 
-All types re-export from `@kosmos/types`:
+All types re-export from `@kosmos-computer/types`:
 
 ```typescript
-import type { AgentEvent, Session, ChatMode } from "@kosmos/sdk";
+import type { AgentEvent, Session, ChatMode } from "@kosmos-computer/sdk";
 ```
 
 See [Agent events](/sdk/agent-events) for the event union.

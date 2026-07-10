@@ -10,7 +10,7 @@ The Kosmos SDK is a **client library** for a running Kosmos environment. It does
 
 | Layer | Owner | SDK role |
 |-------|-------|----------|
-| **Your application** | You | Installs `@kosmos/sdk`, holds credentials |
+| **Your application** | You | Installs `@kosmos-computer/sdk`, holds credentials |
 | **Kosmos server** | Kosmos | Agent loop, tools, sessions, automations, MCP |
 | **Arco** | Arco library | Renders generative UI inside the Kosmos shell |
 | **Control plane** | Kosmos SaaS | Provisions hosted tenants — **not** part of the SDK |
@@ -20,7 +20,7 @@ The Kosmos SDK is a **client library** for a running Kosmos environment. It does
 ```mermaid
 sequenceDiagram
     participant App as Your app
-    participant SDK as @kosmos/sdk
+    participant SDK as @kosmos-computer/sdk
     participant Server as Kosmos server
     participant Agent as Agent runtime
 
@@ -53,7 +53,7 @@ Automations, files, direct tool invoke, shell events. These exist on the Kosmos 
 
 ### Tier 3 — MCP (alternative path)
 
-External programs can call `POST /mcp` with the same bearer token to reach `os.*` capability intents (calendar, tasks, files) without running a full agent turn. A dedicated `@kosmos/mcp` helper package is planned.
+External programs can call `POST /mcp` with the same bearer token to reach `os.*` capability intents (calendar, tasks, files) without running a full agent turn. A dedicated `@kosmos-computer/mcp` helper package is planned.
 
 ## Comparison with OpenHands SDK
 
@@ -69,7 +69,7 @@ Kosmos is closer to an **OpenHands Agent Server client** than a **LangChain-styl
 
 ## Type sync
 
-`@kosmos/types` mirrors the Kosmos server's `shared/types.ts`. On each SDK release, types should be synced from [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos) to avoid drift.
+`@kosmos-computer/types` mirrors the Kosmos server's `shared/types.ts`. On each SDK release, types should be synced from [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos) to avoid drift.
 
 ## Instance-scoped URLs
 

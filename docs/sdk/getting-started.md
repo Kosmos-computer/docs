@@ -47,7 +47,7 @@ Full REST access requires a user session token (login flow). Most SDK integratio
 ## Install
 
 ```bash
-npm install @kosmos/sdk
+npm install @kosmos-computer/sdk
 ```
 
 Or clone the SDK repo for examples and development:
@@ -62,7 +62,7 @@ npm run build
 ## Hello world
 
 ```typescript
-import { KosmosClient } from "@kosmos/sdk";
+import { KosmosClient } from "@kosmos-computer/sdk";
 
 const kosmos = new KosmosClient({
   baseUrl: process.env.KOSMOS_URL!,   // https://kosmos-acme.fly.dev

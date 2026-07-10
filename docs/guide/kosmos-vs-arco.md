@@ -40,6 +40,6 @@ When an agent generates UI:
 
 ## SDK
 
-Programmatic access to a Kosmos environment uses the [**Kosmos SDK**](/sdk/overview) (`@kosmos/sdk`) — not Arco. Arco appears in SDK integrations only when agents emit generative UI or `os_ui` events inside the shell.
+Programmatic access to a Kosmos environment uses the [**Kosmos SDK**](/sdk/overview) (`@kosmos-computer/sdk`) — not Arco. Arco appears in SDK integrations only when agents emit generative UI or `os_ui` events inside the shell.
 
 See the [Arco spec overview](https://kosmos-www.vercel.app/spec.html) on the marketing site for architecture decisions.

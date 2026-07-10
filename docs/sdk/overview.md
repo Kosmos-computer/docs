@@ -11,7 +11,7 @@ The **Kosmos SDK** connects your code to a [**Kosmos environment**](/guide/kosmo
 | | **Kosmos SDK** | **Arco** | **App Bridge SDK** |
 |---|----------------|----------|---------------------|
 | **What it is** | Client library for Kosmos server APIs | Generative UI library (tokens, blocks) | SDK for apps *inside* the Kosmos shell |
-| **Package** | `@kosmos/sdk` | Docs + `ui/` in the Kosmos repo | `packages/app-sdk` in the Kosmos repo |
+| **Package** | `@kosmos-computer/sdk` | Docs + `ui/` in the Kosmos repo | `packages/app-sdk` in the Kosmos repo |
 | **You connect to** | A Kosmos environment URL | Block schemas and render contracts | The shell via postMessage |
 | **Typical use** | Bots, integrations, automations | AI-generated UI in chat and apps | Third-party installed apps |
 
@@ -29,7 +29,7 @@ The **Kosmos SDK** connects your code to a [**Kosmos environment**](/guide/kosmo
 ```
 ┌─────────────────────┐
 │  Your application   │
-│  (@kosmos/sdk)      │
+│  (@kosmos-computer/sdk)      │
 └──────────┬──────────┘
            │ HTTPS + Bearer token
            │ POST /api/chat (SSE)
@@ -53,8 +53,8 @@ Each Kosmos environment is **instance-scoped**. Hosted tenants live at URLs like
 
 | Package | Description |
 |---------|-------------|
-| `@kosmos/sdk` | HTTP + SSE client |
-| `@kosmos/types` | Shared types (`AgentEvent`, `Session`, …) |
+| `@kosmos-computer/sdk` | HTTP + SSE client |
+| `@kosmos-computer/types` | Shared types (`AgentEvent`, `Session`, …) |
 
 Source: [Kosmos-computer/kosmos-sdk](https://github.com/Kosmos-computer/kosmos-sdk)
 
