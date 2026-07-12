@@ -25,7 +25,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            href="https://kosmos-control-plane.fly.dev">
+            href="https://app.kosmos.computer">
             Get your instance
           </Link>
           <Link className="button button--secondary button--lg" to="/guide/getting-started">
@@ -33,7 +33,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            href="https://kosmos-www.vercel.app">
+            href="https://www.kosmos.computer">
             View Kosmos site
           </Link>
         </div>

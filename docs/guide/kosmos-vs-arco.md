@@ -10,7 +10,7 @@ title: Kosmos vs Arco
 | **Owns** | Shell, workspaces, agent UX, focus model, app platform | Tokens, components, blocks, registry contract |
 | **User-facing name** | "Kosmos" on the marketing site and in product copy | "Arco" in docs, spec, and library APIs |
 | **Package / app** | [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos), [Kosmos-computer/www](https://github.com/Kosmos-computer/www) marketing | [Kosmos-computer/docs](https://github.com/Kosmos-computer/docs), `src/components/ui/` in the prototype |
-| **Demo** | http://localhost:4610 | https://kosmos-docs.vercel.app |
+| **Demo** | http://localhost:4610 | https://docs.kosmos.computer |
 
 ## How they connect
 
@@ -42,4 +42,4 @@ When an agent generates UI:
 
 Programmatic access to a Kosmos environment uses the [**Kosmos SDK**](/sdk/overview) (`@kosmos-computer/sdk`) — not Arco. Arco appears in SDK integrations only when agents emit generative UI or `os_ui` events inside the shell.
 
-See the [Arco spec overview](https://kosmos-www.vercel.app/spec.html) on the marketing site for architecture decisions.
+See the [Arco spec overview](https://www.kosmos.computer/spec.html) on the marketing site for architecture decisions.

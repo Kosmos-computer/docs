@@ -63,4 +63,4 @@ This is the **Now** phase in the Arco spec:
 - OpenUI spike: two block types end-to-end
 - Design System workspace as living catalog
 
-See the [Arco spec overview](https://kosmos-www.vercel.app/spec.html) for the full roadmap.
+See the [Arco spec overview](https://www.kosmos.computer/spec.html) for the full roadmap.

@@ -16,7 +16,7 @@ Install the Kosmos SDK and run your first agent chat turn against a Kosmos envir
 
 ### Hosted
 
-Sign up at [kosmos-control-plane.fly.dev](https://kosmos-control-plane.fly.dev) to provision a tenant at `https://kosmos-<name>.fly.dev`. Create your owner account on first visit.
+Sign up at [app.kosmos.computer](https://app.kosmos.computer) to provision a tenant at `https://kosmos-<name>.fly.dev`. Create your owner account on first visit.
 
 ### Local
 
