@@ -1,6 +1,6 @@
 # Arco docs
 
-Documentation for **Arco** — the generative UI library for [Kosmos](https://kosmos-www.vercel.app).
+Documentation for **Arco** — the generative UI library for [Kosmos](https://www.kosmos.computer).
 
 Built with [Docusaurus 3](https://docusaurus.io/). Content migrated from the former `apps/arco-docs` VitePress site in the Kosmos prototype monorepo.
 

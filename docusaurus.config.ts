@@ -6,8 +6,8 @@ const org = 'Kosmos-computer';
 const repo = 'docs';
 const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
-const controlPlaneUrl = 'https://kosmos-control-plane.fly.dev';
-const marketingSiteUrl = 'https://kosmos-www.vercel.app';
+const controlPlaneUrl = 'https://app.kosmos.computer';
+const marketingSiteUrl = 'https://www.kosmos.computer';
 const betaModalUrl = `${marketingSiteUrl}/#beta`;
 
 const config: Config = {
@@ -19,7 +19,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://kosmos-docs.vercel.app',
+  url: 'https://docs.kosmos.computer',
   baseUrl: '/',
   organizationName: org,
   projectName: repo,

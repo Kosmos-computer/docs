@@ -8,9 +8,9 @@ This guide covers how to work with Arco inside the [Kosmos prototype](https://gi
 
 ## Get a hosted instance
 
-Sign up at [kosmos-control-plane.fly.dev](https://kosmos-control-plane.fly.dev) to provision your own Kosmos instance at `https://kosmos-<name>.fly.dev`. After checkout, open your instance URL and create your owner account.
+Sign up at [app.kosmos.computer](https://app.kosmos.computer) to provision your own Kosmos instance at `https://kosmos-<name>.fly.dev`. After checkout, open your instance URL and create your owner account.
 
-Returning customers can [sign in](https://kosmos-control-plane.fly.dev/signin) with the email used at checkout or their instance name.
+Returning customers can [sign in](https://app.kosmos.computer/signin) with the email used at checkout or their instance name.
 
 ## Prerequisites
 
@@ -31,8 +31,8 @@ npm run dev
 | Surface | URL | Package |
 |---------|-----|---------|
 | Kosmos prototype | http://localhost:4610 | [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos) |
-| Kosmos marketing | https://kosmos-www.vercel.app | [Kosmos-computer/www](https://github.com/Kosmos-computer/www) |
-| Arco docs | https://kosmos-docs.vercel.app | [Kosmos-computer/docs](https://github.com/Kosmos-computer/docs) |
+| Kosmos marketing | https://www.kosmos.computer | [Kosmos-computer/www](https://github.com/Kosmos-computer/www) |
+| Arco docs | https://docs.kosmos.computer | [Kosmos-computer/docs](https://github.com/Kosmos-computer/docs) |
 
 To work on these docs locally, clone [Kosmos-computer/docs](https://github.com/Kosmos-computer/docs) and run `npm start`.
 

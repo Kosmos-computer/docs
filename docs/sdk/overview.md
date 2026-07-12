@@ -65,7 +65,7 @@ Source: [Kosmos-computer/kosmos-sdk](https://github.com/Kosmos-computer/kosmos-s
 | **Local Kosmos** | `http://127.0.0.1:4600` (API server) | External client token or session login |
 | **Hosted tenant** | `https://kosmos-<name>.fly.dev` | External client token |
 
-[Get a hosted instance](https://kosmos-control-plane.fly.dev) via the Kosmos control plane.
+[Get a hosted instance](https://app.kosmos.computer) via the Kosmos control plane.
 
 ## Next steps
 

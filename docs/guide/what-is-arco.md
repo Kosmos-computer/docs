@@ -4,7 +4,7 @@ slug: /guide/what-is-arco
 title: What is Arco?
 ---
 
-**Arco** is the generative UI library for [Kosmos](https://kosmos-www.vercel.app). It provides the typed, themeable component vocabulary that AI agents assemble into chat blocks, workspace panels, and full installed apps.
+**Arco** is the generative UI library for [Kosmos](https://www.kosmos.computer). It provides the typed, themeable component vocabulary that AI agents assemble into chat blocks, workspace panels, and full installed apps.
 
 Arco is **not** the operating system. Kosmos owns the shell, workspaces, agent UX, and focus model. Arco owns:
 
