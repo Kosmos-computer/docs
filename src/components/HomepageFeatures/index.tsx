@@ -9,24 +9,24 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Token-driven theming',
+    title: 'One shell for work & life',
     description:
-      'Every surface uses --arco-* design tokens. Light, dark, and custom themes without hardcoded values.',
+      'Chat, code, files, and generated apps share one focus model — agents keep context across every workspace.',
   },
   {
-    title: 'Four component tiers',
+    title: 'Kosmos Cloud',
     description:
-      'Tokens → Primitives → Blocks → Containers. Blocks are the AI\'s unit of generation.',
+      'Provision a private hosted instance at app.kosmos.computer. Manage billing, storage, and credits from Settings.',
   },
   {
-    title: 'One registry contract',
+    title: 'Desktop, mobile, browser',
     description:
-      'defineBlock() drives schema, validation, prompt, docs, and render — zero drift between what the AI emits and what renders.',
+      'Electron desktop, Android APK, Chromebook, SteamOS, and browser/PWA — connect thin clients to your instance.',
   },
   {
-    title: 'Multi-surface adaptivity',
+    title: 'Arco generative UI',
     description:
-      'Window size classes and form-factor policies let the same block reflow across desktop, phone, and widget surfaces.',
+      'Typed tokens, components, and blocks that agents assemble inside Kosmos — documented in Guide and Reference.',
   },
 ];
 
@@ -44,9 +44,9 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <p className={styles.sectionEyebrow}>Why Arco</p>
+          <p className={styles.sectionEyebrow}>Why Kosmos</p>
           <Heading as="h2" className={styles.sectionTitle}>
-            Built for generative UI
+            Built as an operating system for agents
           </Heading>
         </div>
         <div className={styles.featureGrid}>

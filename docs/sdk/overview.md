@@ -4,7 +4,9 @@ slug: /sdk/overview
 title: SDK overview
 ---
 
-The **Kosmos SDK** connects your code to a [**Kosmos environment**](/guide/kosmos-vs-arco) — the generative AI operating system. Use it to run agent chat turns, manage sessions, and automate platform workflows from scripts, backends, and CI pipelines.
+The **Kosmos SDK** connects your code to a [**Kosmos environment**](/kosmos/concepts) — a running instance of the [generative AI operating system](/kosmos/what-is-kosmos). Use it to run agent chat turns, manage sessions, and automate platform workflows from scripts, backends, and CI pipelines.
+
+Need an environment first? [Get a hosted instance](/kosmos/cloud-get-instance) or [run locally](/kosmos/run-locally).
 
 ## Kosmos vs Arco vs App Bridge
 
@@ -65,7 +67,7 @@ Source: [Kosmos-computer/kosmos-sdk](https://github.com/Kosmos-computer/kosmos-s
 | **Local Kosmos** | `http://127.0.0.1:4600` (API server) | External client token or session login |
 | **Hosted tenant** | `https://kosmos-<name>.fly.dev` | External client token |
 
-[Get a hosted instance](https://app.kosmos.computer) via the Kosmos control plane.
+[Get a hosted instance](/kosmos/cloud-get-instance) via Kosmos Cloud, or [run locally](/kosmos/run-locally).
 
 ## Next steps
 

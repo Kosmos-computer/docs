@@ -8,11 +8,12 @@ const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
 const controlPlaneUrl = 'https://app.kosmos.computer';
 const marketingSiteUrl = 'https://www.kosmos.computer';
-const betaModalUrl = `${marketingSiteUrl}/#beta`;
+const githubRepoUrl = 'https://github.com/Kosmos-computer/Kosmos';
 
 const config: Config = {
-  title: 'Arco',
-  tagline: 'Generative UI library for Kosmos — tokens, components, blocks, and the AI assembly contract.',
+  title: 'Kosmos Docs',
+  tagline:
+    'A generative AI operating system for integrated work & life — shell, agents, hosted instances, and Arco UI.',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -62,13 +63,19 @@ const config: Config = {
     navbar: {
       title: 'Kosmos Docs',
       logo: {
-        alt: 'Arco',
+        alt: 'Kosmos',
         src: 'img/logo.svg',
         srcDark: 'img/logo-dark.svg',
         width: 18,
         height: 13,
       },
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'kosmosSidebar',
+          position: 'left',
+          label: 'Kosmos',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'guideSidebar',
@@ -88,24 +95,19 @@ const config: Config = {
           label: 'SDK',
         },
         {
-          type: 'html',
+          href: `${controlPlaneUrl}/signup`,
+          label: 'Get instance',
           position: 'right',
-          value: '<span class="navbar__item navbar__link navbar__link--inactive">Kosmos</span>',
         },
         {
-          type: 'html',
+          href: `${controlPlaneUrl}/connect`,
+          label: 'Sign in',
           position: 'right',
-          value: '<span class="navbar__item navbar__link navbar__link--inactive">Get instance</span>',
         },
         {
-          type: 'html',
+          href: githubRepoUrl,
+          label: 'GitHub',
           position: 'right',
-          value: '<span class="navbar__item navbar__link navbar__link--inactive">Sign in</span>',
-        },
-        {
-          type: 'html',
-          position: 'right',
-          value: '<span class="navbar__item navbar__link navbar__link--inactive">GitHub</span>',
         },
       ],
     },
@@ -113,8 +115,19 @@ const config: Config = {
       style: 'light',
       links: [
         {
+          title: 'Kosmos',
+          items: [
+            {label: 'What is Kosmos?', to: '/kosmos/what-is-kosmos'},
+            {label: 'Get a hosted instance', to: '/kosmos/cloud-get-instance'},
+            {label: 'Sign in', href: `${controlPlaneUrl}/connect`},
+            {label: 'Marketing site', href: marketingSiteUrl},
+            {label: 'Prototype repo', href: githubRepoUrl},
+          ],
+        },
+        {
           title: 'Guide',
           items: [
+            {label: 'What is Arco?', to: '/guide/what-is-arco'},
             {label: 'Getting started', to: '/guide/getting-started'},
             {label: 'Design tokens', to: '/guide/design-tokens'},
             {label: 'Generative blocks', to: '/guide/generative-blocks'},
@@ -137,18 +150,8 @@ const config: Config = {
             {label: 'kosmos-sdk repo', href: 'https://github.com/Kosmos-computer/kosmos-sdk'},
           ],
         },
-        {
-          title: 'Kosmos',
-          items: [
-            {label: 'Marketing site', href: betaModalUrl},
-            {label: 'Get hosted instance', href: betaModalUrl},
-            {label: 'Sign in', href: betaModalUrl},
-            {label: 'Arco spec', href: `${marketingSiteUrl}/spec.html`},
-            {label: 'Prototype repo', href: 'https://github.com/Kosmos-computer/Kosmos'},
-          ],
-        },
       ],
-      copyright: `Arco — generative UI library for Kosmos. © ${new Date().getFullYear()} Kosmos-computer`,
+      copyright: `Kosmos Docs — generative AI OS and Arco UI. © ${new Date().getFullYear()} Kosmos-computer`,
     },
     prism: {
       theme: prismThemes.github,

@@ -55,7 +55,7 @@ Each environment has its own token store. Tokens do not transfer between instanc
 
 ## Control plane (not SDK auth)
 
-[app.kosmos.computer](https://app.kosmos.computer) handles Stripe checkout and Fly provisioning. It does **not** issue agent API tokens. After provisioning, authenticate against your tenant URL directly.
+[Kosmos Cloud](/kosmos/cloud-get-instance) ([app.kosmos.computer](https://app.kosmos.computer)) handles Stripe checkout and Fly provisioning. It does **not** issue agent API tokens. After provisioning, authenticate against your tenant URL directly — see [Auth practices above](#external-client-tokens-recommended-for-sdk).
 
 ## OAuth (future)
 

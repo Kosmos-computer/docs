@@ -16,14 +16,15 @@ Install the Kosmos SDK and run your first agent chat turn against a Kosmos envir
 
 ### Hosted
 
-Sign up at [app.kosmos.computer](https://app.kosmos.computer) to provision a tenant at `https://kosmos-<name>.fly.dev`. Create your owner account on first visit.
+Follow [Get a hosted instance](/kosmos/cloud-get-instance) — signup at [app.kosmos.computer](https://app.kosmos.computer/signup) provisions a tenant at `https://kosmos-<name>.fly.dev`.
 
 ### Local
 
-From the [Kosmos monorepo](https://github.com/Kosmos-computer/Kosmos):
+Follow [Run locally](/kosmos/run-locally). Short version from the [Kosmos monorepo](https://github.com/Kosmos-computer/Kosmos):
 
 ```bash
 npm install
+npm run setup   # first run
 npm run dev
 ```
 

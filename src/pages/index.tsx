@@ -14,27 +14,27 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <p className={styles.eyebrow}>Generative UI library</p>
+        <p className={styles.eyebrow}>Generative AI operating system</p>
         <div className={styles.titleRow}>
           <RainbowCircle />
           <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
-            {siteConfig.title}
+            Kosmos
           </Heading>
         </div>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            href="https://app.kosmos.computer">
-            Get your instance
-          </Link>
-          <Link className="button button--secondary button--lg" to="/guide/getting-started">
-            Read the guide
+            to="/kosmos/what-is-kosmos">
+            What is Kosmos?
           </Link>
           <Link
             className="button button--secondary button--lg"
-            href="https://www.kosmos.computer">
-            View Kosmos site
+            href="https://app.kosmos.computer/signup">
+            Get your instance
+          </Link>
+          <Link className="button button--secondary button--lg" to="/guide/what-is-arco">
+            Arco guide
           </Link>
         </div>
       </div>
@@ -45,8 +45,8 @@ function HomepageHeader() {
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Arco — Generative UI library"
-      description="Typed, themeable components and blocks that AI assembles into apps inside Kosmos.">
+      title="Kosmos Docs"
+      description="A generative AI operating system for integrated work and life — shell, agents, Kosmos Cloud, and Arco UI.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

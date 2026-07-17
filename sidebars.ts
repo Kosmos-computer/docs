@@ -1,6 +1,35 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
+  kosmosSidebar: [
+    {
+      type: 'category',
+      label: 'Introduction',
+      items: [
+        'kosmos/what-is-kosmos',
+        'kosmos/concepts',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Kosmos Cloud',
+      items: [
+        'kosmos/cloud-get-instance',
+        'kosmos/cloud-sign-in',
+        'kosmos/cloud-desktop-connect',
+        'kosmos/cloud-billing',
+        'kosmos/cloud-usage-credits',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Run it yourself',
+      items: [
+        'kosmos/run-locally',
+        'kosmos/self-host',
+      ],
+    },
+  ],
   guideSidebar: [
     {
       type: 'category',

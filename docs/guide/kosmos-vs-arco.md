@@ -4,13 +4,16 @@ slug: /guide/kosmos-vs-arco
 title: Kosmos vs Arco
 ---
 
+Start with [What is Kosmos?](/kosmos/what-is-kosmos) if you need the product overview. This page is the naming boundary between the OS and the UI library.
+
 | | **Kosmos** | **Arco** |
 |---|------------|----------|
 | **What it is** | Generative AI operating system | Generative UI library |
 | **Owns** | Shell, workspaces, agent UX, focus model, app platform | Tokens, components, blocks, registry contract |
 | **User-facing name** | "Kosmos" on the marketing site and in product copy | "Arco" in docs, spec, and library APIs |
-| **Package / app** | [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos), [Kosmos-computer/www](https://github.com/Kosmos-computer/www) marketing | [Kosmos-computer/docs](https://github.com/Kosmos-computer/docs), `src/components/ui/` in the prototype |
-| **Demo** | http://localhost:4610 | https://docs.kosmos.computer |
+| **Hosted product** | [Kosmos Cloud](/kosmos/cloud-get-instance) / Kosmos Hosted (billing) | N/A — Arco ships inside each instance |
+| **Package / app** | [Kosmos-computer/Kosmos](https://github.com/Kosmos-computer/Kosmos), [Kosmos-computer/www](https://github.com/Kosmos-computer/www) marketing | Guide + Reference in these docs, `src/components/ui/` in the prototype |
+| **Demo** | http://localhost:4610 or your `kosmos-*.fly.dev` | https://docs.kosmos.computer/guide/what-is-arco |
 
 ## How they connect
 
@@ -36,6 +39,7 @@ When an agent generates UI:
 
 - Use **Kosmos** when describing the OS, shell, workspaces, or end-user product.
 - Use **Arco** when describing tokens, components, blocks, schemas, or the generative library.
+- Use **Kosmos Cloud** for the managed hosted path and desktop Settings section; **Kosmos Hosted** appears in billing UI — see [Concepts](/kosmos/concepts).
 - The prototype repo is named `Kosmos`; product branding on the website is Kosmos.
 
 ## SDK
