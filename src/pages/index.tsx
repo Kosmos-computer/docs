@@ -28,11 +28,6 @@ function HomepageHeader() {
             to="/kosmos/what-is-kosmos">
             What is Kosmos?
           </Link>
-          <Link
-            className="button button--secondary button--lg"
-            href="https://app.kosmos.computer/signup">
-            Get your instance
-          </Link>
           <Link className="button button--secondary button--lg" to="/guide/what-is-arco">
             Arco guide
           </Link>

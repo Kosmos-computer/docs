@@ -6,7 +6,6 @@ const org = 'Kosmos-computer';
 const repo = 'docs';
 const editUrl = `https://github.com/${org}/${repo}/tree/main/`;
 
-const controlPlaneUrl = 'https://app.kosmos.computer';
 const marketingSiteUrl = 'https://www.kosmos.computer';
 const githubRepoUrl = 'https://github.com/Kosmos-computer/Kosmos';
 
@@ -95,16 +94,6 @@ const config: Config = {
           label: 'SDK',
         },
         {
-          href: `${controlPlaneUrl}/signup`,
-          label: 'Get instance',
-          position: 'right',
-        },
-        {
-          href: `${controlPlaneUrl}/connect`,
-          label: 'Sign in',
-          position: 'right',
-        },
-        {
           href: githubRepoUrl,
           label: 'GitHub',
           position: 'right',
@@ -118,8 +107,6 @@ const config: Config = {
           title: 'Kosmos',
           items: [
             {label: 'What is Kosmos?', to: '/kosmos/what-is-kosmos'},
-            {label: 'Get a hosted instance', to: '/kosmos/cloud-get-instance'},
-            {label: 'Sign in', href: `${controlPlaneUrl}/connect`},
             {label: 'Marketing site', href: marketingSiteUrl},
             {label: 'Prototype repo', href: githubRepoUrl},
           ],
